@@ -16,7 +16,7 @@ IUSE="test systemd"
 RESTRICT="network-sandbox"
 
 DEPEND="
-	app-emulation/libpod
+	app-emulation/podman
 	sys-apps/flatpak
 	systemd? ( sys-apps/systemd )
 "
