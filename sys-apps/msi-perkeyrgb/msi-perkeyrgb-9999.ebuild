@@ -22,7 +22,8 @@ HOMEPAGE="https://github.com/Askannz/msi-perkeyrgb"
 LICENSE="MIT"
 SLOT="0"
 
-DEPEND="dev-libs/hidapi"
+DEPEND="dev-libs/hidapi
+		sys-apps/usbutils"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
