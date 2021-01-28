@@ -28,6 +28,7 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 DOCS="README.md"
+PATCHES=( "${FILESDIR}/msi-perkeyrgb-2.1-default-model.patch" )
 
 python_install() {
 	distutils-r1_python_install

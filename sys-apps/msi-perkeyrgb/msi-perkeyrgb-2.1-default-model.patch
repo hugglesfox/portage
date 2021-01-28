@@ -1,0 +1,13 @@
+diff --git a/msi_perkeyrgb/main.py b/msi_perkeyrgb/main.py
+index 9020b2c..5888e24 100755
+--- a/msi_perkeyrgb/main.py
++++ b/msi_perkeyrgb/main.py
+@@ -10,7 +10,7 @@ from .hidapi_wrapping import HIDLibraryError, HIDNotFoundError, HIDOpenError
+ 
+ VERSION = "2.1"
+ DEFAULT_ID = "1038:1122"
+-DEFAULT_MODEL = "GE63"  # Default laptop model if nothing specified
++DEFAULT_MODEL = "GS65"  # Default laptop model if nothing specified
+ 
+ 
+ def main():
