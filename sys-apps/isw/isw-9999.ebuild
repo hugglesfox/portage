@@ -10,6 +10,7 @@ inherit python-single-r1 systemd
 if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/YoyPa/isw.git"
+	KEYWORDS="~amd64"
 else
 	SRC_URI="https://github.com/YoyPa/isw/archive/${PV}.tar.gz"
 fi
@@ -19,12 +20,13 @@ HOMEPAGE="https://github.com/YoyPa/isw"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+DOCS="README.md"
 
 src_prepare() {
 	default
@@ -32,8 +34,6 @@ src_prepare() {
 
 src_install() {
 	python_doscript isw
-
-	dodoc README.md
 	systemd_dounit usr/lib/systemd/system/isw@.service
 
 	insinto /etc
