@@ -9,7 +9,7 @@ inherit python-single-r1 systemd
 
 if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
-	EGIT_REPO_URL="https://github.com/YoyPa/isw.git"
+	EGIT_REPO_URI="https://github.com/YoyPa/isw.git"
 else
 	SRC_URI="https://github.com/YoyPa/isw/archive/${PV}.tar.gz"
 fi
