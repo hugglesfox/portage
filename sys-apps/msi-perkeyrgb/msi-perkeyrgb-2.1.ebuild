@@ -29,6 +29,5 @@ DOCS="README.md"
 
 python_install() {
 	distutils-r1_python_install
-	
 	udev_dorules 99-msi-rgb.rules
 }
