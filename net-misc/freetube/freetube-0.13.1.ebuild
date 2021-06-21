@@ -15,7 +15,7 @@ KEYWORDS="~amd64"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
-BDEPEND=""
+BDEPEND="app-arch/unzip"
 
 QA_PREBUILT="
 	/opt/${PN}/freetube
@@ -28,6 +28,13 @@ QA_PREBUILT="
 	/opt/${PN}/swiftshader/libEGL.so
 	/opt/${PN}/swiftshader/libGLESv2.so
 "
+
+src_unpack() {
+	# HACK
+	mkdir ${P}
+	cd ${P}
+	default_src_unpack
+}
 
 src_install() {
 	insinto /opt/${PN}
