@@ -38,10 +38,10 @@ src_unpack() {
 
 src_install() {
 	insinto /opt/${PN}
-	fperms +x freetube chrome-sandbox
 	doins -r *
+	fperms +x /opt/${PN}/freetube /opt/${PN}/chrome-sandbox
 	dosym ../../opt/${PN}/freetube usr/bin/freetube
-	domenu "${FILESDIR}/freetube.desktop"
+	domenu "${FILESDIR}/FreeTube.desktop"
 	doicon -s 256 "${FILESDIR}/FreeTube.svg"
 }
 
