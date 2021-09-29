@@ -29,4 +29,3 @@ DEPEND="
 	upx? ( app-arch/upx )"
 RDEPEND="${DEPEND}"
 BDEPEND=""
-
